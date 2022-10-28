@@ -18,11 +18,14 @@ class CustomButton extends StatelessWidget {
     return Container(
       height: 50,
       width: double.maxFinite,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(2)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             backgroundColor: color,
             foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
             padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
             textStyle:
                 const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
